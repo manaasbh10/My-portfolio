@@ -1,99 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Manas Bhandari — Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manas Bhandari | Portfolio</title>
+
+<style>
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes float {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0px);}
+}
+</style>
+
 </head>
-<body>
 
-  <!-- NAV -->
-  <nav>
-    <span class="nav-logo">MB</span>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
+<body style="margin:0; font-family:Segoe UI, sans-serif; background:linear-gradient(135deg,#0f172a,#1e40af,#06b6d4); color:white;">
+
+<!-- Hero Section -->
+<div style="text-align:center; padding:60px 20px; animation:fadeIn 1s ease;">
+
+    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43b?w=500"
+         alt="Profile"
+         style="width:180px; height:180px; border-radius:50%; border:5px solid white; object-fit:cover; animation:float 3s infinite; box-shadow:0 0 25px rgba(255,255,255,0.4);">
+
+    <h1 style="font-size:55px; margin:20px 0 10px 0;">
+        Manas Bhandari
+    </h1>
+
+    <p style="font-size:22px; color:#dbeafe;">
+        Student • Technology Enthusiast • Lifelong Learner
+    </p>
+
+</div>
+
+<!-- About Me -->
+<div style="width:85%; margin:20px auto; background:rgba(255,255,255,0.1); padding:30px; border-radius:20px; backdrop-filter:blur(10px); animation:fadeIn 1.2s ease;">
+
+    <h2 style="color:#38bdf8;">👋 About Me</h2>
+
+    <p style="font-size:18px; line-height:1.8;">
+        Hello! My name is <b>Manas Bhandari</b>. I am a
+        <b>15-year-old student</b> from <b>Manigram, Nepal</b>.
+        I love learning new things and exploring technology.
+        I never get tired of gaining knowledge and improving myself.
+        My goal is to continue learning and building useful skills for the future.
+    </p>
+
+</div>
+
+<!-- Qualification -->
+<div style="width:85%; margin:20px auto; background:rgba(255,255,255,0.1); padding:30px; border-radius:20px;">
+
+    <h2 style="color:#38bdf8;">🎓 Qualification</h2>
+
+    <p style="font-size:18px;">
+        Currently studying in <b>Grade 10</b> at
+        <b>Shree Shanti Model Secondary School</b>.
+    </p>
+
+</div>
+
+<!-- Skills -->
+<div style="width:85%; margin:20px auto; background:rgba(255,255,255,0.1); padding:30px; border-radius:20px;">
+
+    <h2 style="color:#38bdf8;">💻 Skills</h2>
+
+    <ul style="font-size:18px; line-height:2;">
+        <li>✔ Fast Learner</li>
+        <li>✔ Communication Skills</li>
+        <li>✔ Technology Awareness</li>
+        <li>✔ Problem Solving</li>
+        <li>✔ Creative Thinking</li>
+        <li>✔ AI & Prompt Engineering Basics</li>
     </ul>
-  </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-monogram" aria-hidden="true">MB</div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">Hey there, I'm</p>
-      <h1 class="hero-name">Manas<br/>Bhandari</h1>
-      <p class="hero-sub">Student · Explorer · Grade 10</p>
-      <a href="#about" class="btn">Get to know me</a>
-    </div>
-    <div class="hero-scroll-hint" aria-hidden="true">scroll ↓</div>
-  </section>
+</div>
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <div class="container">
-      <p class="section-label">About Me</p>
-      <h2 class="section-heading">A curious mind<br/>always learning.</h2>
-      <div class="about-grid">
-        <div class="about-card">
-          <span class="card-icon">🎓</span>
-          <h3>Student</h3>
-          <p>Currently in Grade 10, passionate about gaining knowledge and growing every single day.</p>
+<!-- Hobbies -->
+<div style="width:85%; margin:20px auto; background:rgba(255,255,255,0.1); padding:30px; border-radius:20px;">
+
+    <h2 style="color:#38bdf8;">🌍 Hobbies</h2>
+
+    <div style="display:flex; justify-content:space-around; flex-wrap:wrap; text-align:center;">
+
+        <div style="padding:15px;">
+            <h3>✈️ Travelling</h3>
         </div>
-        <div class="about-card">
-          <span class="card-icon">🌱</span>
-          <h3>Age 15</h3>
-          <p>Young, driven, and full of ideas. The best time to start building a future is right now.</p>
-        </div>
-        <div class="about-card">
-          <span class="card-icon">📍</span>
-          <h3>Nepal</h3>
-          <p>Proud to be from the land of mountains — bringing that determination to everything I do.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- EDUCATION -->
-  <section class="section section--alt" id="education">
-    <div class="container">
-      <p class="section-label">Education</p>
-      <h2 class="section-heading">Where I learn &amp;<br/>grow every day.</h2>
-      <div class="edu-card">
-        <div class="edu-badge">10</div>
-        <div class="edu-info">
-          <h3>Shree Shanti Model Secondary School</h3>
-          <p class="edu-detail">Grade 10 &nbsp;·&nbsp; Current Student</p>
-          <p class="edu-desc">Committed to academics and personal growth, building strong foundations for the future ahead.</p>
+        <div style="padding:15px;">
+            <h3>🍔 Eating</h3>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section class="section" id="contact">
-    <div class="container contact-container">
-      <p class="section-label">Let's Connect</p>
-      <h2 class="section-heading">Say hello!</h2>
-      <p class="contact-sub">I'm always happy to connect with new people. Find me on Facebook.</p>
-      <a
-        href="https://www.facebook.com/manas.bhandari"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn btn--facebook"
-      >
-        <svg class="fb-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.592 1.323-1.324V1.324C24 .593 23.408 0 22.676 0"/></svg>
-        Manas Bhandari on Facebook
-      </a>
-    </div>
-  </section>
+        <div style="padding:15px;">
+            <h3>🍳 Cooking</h3>
+        </div>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Manas Bhandari &nbsp;·&nbsp; Made with ♥ in Nepal</p>
-  </footer>
+        <div style="padding:15px;">
+            <h3>💻 Technology</h3>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Contact -->
+<div style="width:85%; margin:20px auto 50px auto; background:rgba(255,255,255,0.1); padding:30px; border-radius:20px; text-align:center;">
+
+    <h2 style="color:#38bdf8;">📞 Contact Me</h2>
+
+    <p><b>Name:</b> Manas Bhandari</p>
+    <p><b>Country:</b> Nepal</p>
+    <p><b>Phone:</b> 9761560724</p>
+
+    <div style="margin-top:20px;">
+
+        <a href="https://www.facebook.com/share/1CfYJDm3eF/"
+           target="_blank"
+           style="text-decoration:none; background:#1877F2; color:white; padding:12px 25px; border-radius:30px; margin:10px; display:inline-block;">
+           Facebook
+        </a>
+
+        <a href="https://www.instagram.com/manaasss_19?igsh=a25jbjU2NTJ5djQ3"
+           target="_blank"
+           style="text-decoration:none; background:#E1306C; color:white; padding:12px 25px; border-radius:30px; margin:10px; display:inline-block;">
+           Instagram
+        </a>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div style="text-align:center; padding:20px; background:rgba(0,0,0,0.2);">
+    <p>© 2026 Manas Bhandari | Portfolio Website</p>
+</div>
 
 </body>
 </html>
